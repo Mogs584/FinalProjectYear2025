@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://insvarwmm5fx"
+path="res://.godot/imported/25 - End Theme 2.ogg-f1ed0e5f32243302b37b3c940878ae96.oggvorbisstr"
+
+[deps]
+
+source_file="res://Music/25 - End Theme 2.ogg"
+dest_files=["res://.godot/imported/25 - End Theme 2.ogg-f1ed0e5f32243302b37b3c940878ae96.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdprqp0vx1rlr"]
+
+[ext_resource type="Texture2D" uid="uid://xgo2u4wod3xf" path="res://assets/kenney_top-down-tanks-redux/PNG/Default size/bulletBlue3_outline.png" id="1_v7oki"]
+[ext_resource type="Script" uid="uid://bnjyo71lpj5yk" path="res://bullet.gd" id="1_v8qja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8qja"]
+size = Vector2(8, 18)
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_v8qja")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v7oki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_v8qja")
