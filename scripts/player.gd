@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 
-
 @export var bullet_scene: PackedScene
 var health = 10
 var speed = 50
@@ -18,7 +17,6 @@ func _physics_process(delta: float) -> void:
 	direction.y = Input.get_axis("up", "down")
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
-
 
 	if direction.length() > 1.0:
 		direction = direction.normalized()

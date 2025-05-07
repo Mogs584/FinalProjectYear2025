@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dynaqyfg0llnw" path="res://scripts/player.gd" id="1_j2hiq"]
 [ext_resource type="Texture2D" uid="uid://bhka04d54m7om" path="res://assets/kenney_top-down-tanks-redux/PNG/Default size/tankBody_sand_outline.png" id="1_qyu6v"]
 [ext_resource type="Texture2D" uid="uid://d3w0nfpe2kofq" path="res://assets/kenney_top-down-tanks-redux/PNG/Default size/tankSand_barrel3_outline.png" id="2_fqs8p"]
-[ext_resource type="PackedScene" uid="uid://cdprqp0vx1rlr" path="res://bullet.tscn" id="2_qlg0r"]
+[ext_resource type="PackedScene" uid="uid://cdprqp0vx1rlr" path="res://scenes/bullet.tscn" id="2_qlg0r"]
 [ext_resource type="Script" uid="uid://dk1nda6482h7e" path="res://scripts/barrel.gd" id="3_np2yt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mg672"]
@@ -12,7 +12,7 @@ size = Vector2(42, 40)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n001w"]
 size = Vector2(12, 29)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 31
