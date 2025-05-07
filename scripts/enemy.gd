@@ -1,7 +1,7 @@
 extends Area2D
 
 func _process(delta: float) -> void:
-	blow_up()
+	#blow_up()
 
 
 
@@ -14,3 +14,6 @@ func blow_up():
 	#if is_in_group("Bullet"):
 		#queue_free()
 		#print("hi")
+
+
+# Don't call the function from the _process() function.
