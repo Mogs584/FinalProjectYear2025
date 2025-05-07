@@ -17,12 +17,9 @@ shape = SubResource("RectangleShape2D_3yqyl")
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
 texture = ExtResource("2_iifgy")
 
-[node name="Barrel" type="Area2D" parent="."]
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Barrel"]
+[node name="Barrel" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
-scale = Vector2(0.75, 0.933333)
+scale = Vector2(0.875, 1)
 texture = ExtResource("3_epg4t")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

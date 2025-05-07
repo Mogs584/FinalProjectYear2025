@@ -8,3 +8,6 @@ func _process(delta: float) -> void:
 	position += direction * speed * delta
 	look_at(mouse_position)
 	rotation += PI / 2
+
+func _destroy():
+	queue_free()
