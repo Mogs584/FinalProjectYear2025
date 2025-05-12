@@ -43,3 +43,4 @@ func shoot():
 	bullet.mouse_position = mouse_position
 	get_parent().add_child(bullet)
 	
+	AudioManager.shoot_sfx.play()

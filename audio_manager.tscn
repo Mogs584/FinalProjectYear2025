@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://ch2rdo456ugjq"]
+
+[ext_resource type="Script" uid="uid://beb4vlobpb170" path="res://audio_manager.gd" id="1_bq1v2"]
+[ext_resource type="AudioStream" uid="uid://drqt30xt8rsqq" path="res://Sounds/Game/Fire.wav" id="2_6jj5d"]
+[ext_resource type="AudioStream" uid="uid://2xbyf7qo6566" path="res://Sounds/Game/GameOver.wav" id="3_6jj5d"]
+[ext_resource type="AudioStream" uid="uid://b4s80uswy2t8k" path="res://Sounds/Game/Hit7.wav" id="4_nhx87"]
+[ext_resource type="AudioStream" uid="uid://b8xy2hkkdvg0c" path="res://Sounds/Game/Explosion4.wav" id="5_l2k84"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_bq1v2")
+
+[node name="Shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_6jj5d")
+volume_db = -10.306
+
+[node name="Game_over" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6jj5d")
+volume_db = -10.306
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nhx87")
+volume_db = -10.306
+
+[node name="Blow_up" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_l2k84")
+volume_db = -10.306
